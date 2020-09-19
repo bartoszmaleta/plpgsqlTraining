@@ -21,7 +21,7 @@ CREATE OR REPLACE FUNCTION fibonaci(n INTEGER)
 END
 $fibonaci$ LANGUAGE plpgsql;
 
-SELECT fibonaci(15);
+SELECT fibonaci(15); -- OUTPUT 8
 
 ---------------------------------
 --------------------------------- Returns the n-th Fibonacci number with while loop: nth_fib(n)
@@ -44,4 +44,4 @@ CREATE OR REPLACE FUNCTION fibonaci2(n INTEGER)
 END $fibonaci2$ LANGUAGE plpgsql;
 
 
-SELECT fibonaci2(54);
+SELECT fibonaci2(54); -- OUTPUT 27
